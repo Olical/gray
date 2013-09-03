@@ -3,4 +3,4 @@ project(GRAY)
 
 set(CMAKE_C_FLAGS "-g -Wall")
 include_directories(includes)
-add_subdirectory(src/gray)
+add_subdirectory(src)
