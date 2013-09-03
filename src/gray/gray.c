@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-unsigned int binary_to_gray(unsigned int c)
+unsigned int gray_encode(unsigned int c)
 {
 	return (c >> 1) ^ c;
 }
 
-unsigned int gray_to_binary(unsigned int c)
+unsigned int gray_decode(unsigned int c)
 {
 	unsigned int mask;
 
@@ -29,14 +29,14 @@ int main()
 	printf("Input contains %i bytes.\n", length);
 
 	for (i = 0; i < length; i++) {
-		output[i] = binary_to_gray(input[i]);
+		output[i] = gray_encode(input[i]);
 	}
 
 	printf("Output is: \"%s\".\n", output);
 	printf("Now back the other way!\n");
 
 	for (i = 0; i < length; i++) {
-		reverse[i] = gray_to_binary(output[i]);
+		reverse[i] = gray_decode(output[i]);
 	}
 
 	printf("Reversed output is: \"%s\".\n", reverse);
