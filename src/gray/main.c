@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <graylib/graylib.h>
+#include <gray/helpers.h>
 
 int main()
 {

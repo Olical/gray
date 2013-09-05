@@ -1,4 +1,4 @@
-#include <graylib/graylib.h>
+#include <gray/helpers.h>
 
 unsigned int gray_encode(unsigned int c)
 {
