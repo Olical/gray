@@ -10,6 +10,9 @@ int main()
 	char reverse[length];
 	int i;
 
+	output[length] = '\0';
+	reverse[length] = '\0';
+
 	printf("Input is: \"%s\".\n", input);
 	printf("Input contains %i bytes.\n", length);
 
