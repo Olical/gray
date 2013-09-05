@@ -29,5 +29,13 @@ int main()
 
 	printf("Reversed output is: \"%s\".\n", reverse);
 
+
+	char c;
+
+	printf("\nSTDIN: ");
+	while ((c = fgetc(stdin)) != EOF) {
+		printf("%c", c);
+	}
+
 	return 0;
 }
